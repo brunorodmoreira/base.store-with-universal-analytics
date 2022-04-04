@@ -38,3 +38,17 @@ export const wrapRootElement = ({ element }) => (
 export const wrapPageElement = ({ element }) => {
   return <Layout>{element}</Layout>
 }
+
+export const onRouteUpdate = ({ location, prevLocation }) => {
+  window.postMessage({
+    name: 'AnalyticsEvent',
+    params: {
+      name: 'store:page_view',
+      params: {
+        location: location.href,
+        page: location.pathname,
+        referrer: prevLocation ? prevLocation.href : null,
+      },
+    },
+  })
+}
