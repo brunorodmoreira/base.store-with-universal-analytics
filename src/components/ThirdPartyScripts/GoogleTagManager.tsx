@@ -5,7 +5,7 @@ interface Props {
   dataLayerName?: string
 }
 
-const GTM_DEBUG_QUERY_STRING = 'gtm_debug'
+// const GTM_DEBUG_QUERY_STRING = 'gtm_debug'
 
 const useSnippet = (opts: Props & { partytownScript: boolean }) => `
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
