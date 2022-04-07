@@ -3,7 +3,7 @@ import React from 'react'
 function VTEX() {
   return (
     <>
-      <script
+      {/* <script
         key="vtexrc.js-init"
         type="text/partytown"
         dangerouslySetInnerHTML={{
@@ -11,7 +11,7 @@ function VTEX() {
     window.sendrc=function(en,ed){window.NavigationCapture&&window.NavigationCapture.sendEvent(en,ed)};
     `,
         }}
-      />
+      /> */}
       <script
         key="vtexrc.js-script"
         type="text/partytown"
